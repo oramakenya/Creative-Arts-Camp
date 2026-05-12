@@ -34,7 +34,7 @@ export default function ParentSection() {
     e.preventDefault();
 
     // Sends the parent and all children info in one go
-    await fetch("https://api.sheetmonkey.io/form/v1/6FRHYA2de9PpEbhWnkeEHx", {
+    await fetch("https://api.sheetmonkey.io/form/6FRHYA2de9PpEbhWnkeEHx", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
