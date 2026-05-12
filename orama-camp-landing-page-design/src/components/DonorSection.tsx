@@ -23,7 +23,7 @@ export default function DonorSection() {
  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    await fetch("https://api.sheetmonkey.io/form/v1/6FRHYA2de9PpEbhWnkeEHx", {
+    await fetch("https://api.sheetmonkey.io/form/6FRHYA2de9PpEbhWnkeEHx", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
