@@ -220,21 +220,21 @@ export const SITE_CONTENT = {
     paymentPlans: [
       {
         name: 'Full Payment',
-        price: '12,000',
+        price: '7,000',
         description: 'Pay in full and secure your child\'s spot immediately',
         features: ['Immediate confirmation', 'Refreshments, Game equipment', 'All materials & supplies', 'Gallery & Concert access', 'Certificate of completion'],
         highlight: false,
       },
       {
         name: '2-Installment Plan',
-        price: '6,000',
+        price: '3,500',
         description: 'Split into two equal payments for flexibility',
         features: ['6,000 KES on registration', '6,000 KES due May 30, 2026', 'Refreshments, Game equipment', 'All materials & supplies', 'Gallery & Concert access'],
         highlight: true,
       },
       {
         name: '3-Installment Plan',
-        price: '4,000',
+        price: '2,333',
         description: 'Three manageable monthly payments',
         features: ['4,000 KES on registration', '4,000 KES due April 30, 2026', '4,000 KES due May 30, 2026', 'All materials & supplies', 'Gallery & Concert access'],
         highlight: false,
