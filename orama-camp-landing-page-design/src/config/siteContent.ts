@@ -8,7 +8,7 @@
 export const SITE_CONTENT = {
   // Hero Section
   hero: {
-    badge: 'June 2026 · Hidden Gardens, Karen · Ages 7–16',
+    badge: 'June 24-27 · 2026 · Hidden Gardens, Karen · Ages 7–16',
     title: 'The Garden of Creativity',
     subtitle: 'A 4-day immersive arts residency where young minds explore performing arts, visual arts, and literary expression — building emotional intelligence through creative collaboration.',
     tracks: [
