@@ -390,6 +390,6 @@ export const SITE_CONTENT = {
       address: 'Hidden Gardens, Karen, Nairobi',
     },
     copyright: '© 2026 ORAMA Creative Arts Program. All rights reserved.',
-    tagline: 'Made with ❤️ for Kenya\'s young creatives',
+    tagline: 'Product of the AINE Corp. Made with ❤️ for Africa\'s young creatives',
   },
 };
