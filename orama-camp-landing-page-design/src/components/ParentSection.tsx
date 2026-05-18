@@ -33,16 +33,28 @@ export default function ParentSection() {
  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Sends the parent and all children info in one go
+    // This converts the technical "code" into a clean, human-readable list for Excel
+    const readableChildren = children
+      .map((child: any, index: number) => {
+        const name = child.name || child.childName || "Unnamed";
+        const age = child.age ? `(Age: ${child.age})` : "";
+        const track = child.track ? `[Track: ${child.track}]` : "";
+        return `${index + 1}. ${name} ${age} ${track}`;
+      })
+      .join(" | ");
+
     await fetch("https://api.sheetmonkey.io/form/6FRHYA2de9PpEbhWnkeEHx", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        ...parentData,
-        Children: JSON.stringify(children), // Packs children data into one column
-        Plan: parents.paymentPlans[selectedPlan].name,
-        Type: "Parent",
-        TotalAmount: parents.paymentPlans[selectedPlan].price
+        ParentName: parentData.parentName,
+        Email: parentData.email,
+        Phone: parentData.phone,
+        EmergencyContact: parentData.emergencyContact,
+        ChildrenDetails: readableChildren, // This sends clean text instead of raw code
+        SelectedPlan: parents.paymentPlans[selectedPlan].name,
+        TotalAmount: parents.paymentPlans[selectedPlan].price,
+        Type: "Parent"
       }),
     });
 
