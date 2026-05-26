@@ -106,7 +106,7 @@ export default function ParentSection() {
 
         {/* What's Included */}
         <div className="p-8 rounded-3xl bg-white shadow-sm border border-orama-warm mb-16">
-          <h3 className="text-xl font-bold text-orama-navy mb-6 text-center">What's Included in the 12,000 KES Fee</h3>
+          <h3 className="text-xl font-bold text-orama-navy mb-6 text-center">What's Included in the 7,000 KES Fee</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {parents.whatsIncluded.map((item, i) => (
               <div key={i} className="flex items-center gap-3 p-3 rounded-xl bg-orama-cream">
