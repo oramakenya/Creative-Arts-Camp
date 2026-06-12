@@ -8,7 +8,7 @@
 export const SITE_CONTENT = {
   // Hero Section
   hero: {
-    badge: 'June 24-27 · 2026 · Hidden Gardens, Karen · Ages 7–16',
+    badge: 'July 8-11 · 2026 · Hidden Gardens, Karen · Ages 7–16',
     title: 'The Garden of Creativity',
     subtitle: 'A 4-day immersive arts residency where young minds explore performing arts, visual arts, and literary expression — building emotional intelligence through creative collaboration.',
     tracks: [
@@ -42,7 +42,7 @@ export const SITE_CONTENT = {
       { value: '100%', label: 'Creative Outcomes' },
     ],
     location: {
-      when: { label: 'When', value: 'June 2026', detail: '4 consecutive days' },
+      when: { label: 'When', value: 'July 2026', detail: '4 consecutive days' },
       where: { label: 'Where', value: 'Hidden Gardens', detail: 'Karen, Nairobi' },
       culmination: { label: 'Culmination', value: 'Gallery & Concert', detail: 'Public showcase for families' },
     },
